@@ -26,13 +26,15 @@ const DOM = {
 // Sticky Header on Scroll
 // ========================================
 function initStickyHeader() {
-    window.addEventListener('scroll', () => {
+    const handleScroll = throttle(() => {
         if (window.scrollY > CONFIG.scrollThreshold) {
             DOM.header.classList.add('scrolled');
         } else {
             DOM.header.classList.remove('scrolled');
         }
-    });
+    }, 100);
+    
+    window.addEventListener('scroll', handleScroll);
 }
 
 // ========================================
@@ -142,7 +144,7 @@ function initScrollAnimations() {
 function initActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
     
-    window.addEventListener('scroll', () => {
+    const handleScroll = throttle(() => {
         const scrollY = window.pageYOffset;
         const headerHeight = DOM.header.offsetHeight;
         
@@ -160,7 +162,9 @@ function initActiveNavLink() {
                 }
             }
         });
-    });
+    }, 100);
+    
+    window.addEventListener('scroll', handleScroll);
 }
 
 // ========================================
@@ -169,11 +173,15 @@ function initActiveNavLink() {
 function initLazyLoading() {
     // Check if IntersectionObserver is supported
     if (!('IntersectionObserver' in window)) {
-        console.log('IntersectionObserver not supported for lazy loading');
         return;
     }
     
     const lazyImages = document.querySelectorAll('img[data-src]');
+    
+    // Only initialize if there are lazy-loadable images
+    if (lazyImages.length === 0) {
+        return;
+    }
     
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -190,44 +198,8 @@ function initLazyLoading() {
 }
 
 // ========================================
-// Parallax Effect for Hero Section
-// ========================================
-function initParallax() {
-    const hero = document.querySelector('.hero');
-    
-    if (!hero) return;
-    
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallaxSpeed = 0.5;
-        
-        if (scrolled < window.innerHeight) {
-            hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-        }
-    });
-}
-
-// ========================================
 // Counter Animation for Statistics
 // ========================================
-function animateCounter(element, target, duration = 2000) {
-    const start = 0;
-    const increment = target / (duration / 16); // 60fps
-    let current = start;
-    
-    const updateCounter = () => {
-        current += increment;
-        
-        if (current < target) {
-            element.textContent = Math.floor(current).toLocaleString();
-            requestAnimationFrame(updateCounter);
-        } else {
-            element.textContent = target.toLocaleString();
-        }
-    };
-    
-    updateCounter();
-}
 
 function initCounterAnimations() {
     // Check if IntersectionObserver is supported
@@ -317,6 +289,18 @@ function initFormValidation() {
 // Performance Optimization
 // ========================================
 
+// Throttle function for scroll events (defined early for use in other functions)
+function throttle(func, limit = 100) {
+    let inThrottle;
+    return function(...args) {
+        if (!inThrottle) {
+            func.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
+}
+
 // Debounce function for performance optimization
 function debounce(func, wait = 20) {
     let timeout;
@@ -327,18 +311,6 @@ function debounce(func, wait = 20) {
         };
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
-    };
-}
-
-// Throttle function for scroll events
-function throttle(func, limit = 100) {
-    let inThrottle;
-    return function(...args) {
-        if (!inThrottle) {
-            func.apply(this, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
     };
 }
 

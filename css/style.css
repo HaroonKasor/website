@@ -295,6 +295,14 @@ ul, ol {
     width: 100%;
 }
 
+.nav__link.active {
+    color: var(--color-primary);
+}
+
+.nav__link.active::after {
+    width: 100%;
+}
+
 .nav__buttons {
     display: none;
     gap: var(--spacing-md);
