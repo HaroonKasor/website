@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern landing page for founders and learners - Build, grow, and scale your business with our comprehensive platform">
+    <meta name="keywords" content="startup, founders, learners, business, growth, platform">
+    <meta name="author" content="Your Company">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Build Your Future - Platform for Founders & Learners">
+    <meta property="og:description" content="Everything you need to start, grow, and scale your business">
+    
+    <title>Build Your Future - Platform for Founders & Learners</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="#6366F1"/>
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="nav__logo-text">LaunchPad</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#product" class="nav__link">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__buttons">
+                    <a href="#" class="btn btn--ghost">Sign In</a>
+                    <a href="#" class="btn btn--primary">Get Started</a>
+                </div>
+            </div>
+            
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <span class="hero__badge">🚀 New features available now</span>
+                    <h1 class="hero__title">
+                        Build Your <span class="gradient-text">Future</span><br>
+                        One Step at a Time
+                    </h1>
+                    <p class="hero__description">
+                        Everything you need to start, grow, and scale your business. 
+                        Join thousands of founders and learners who are building the future.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#pricing" class="btn btn--primary btn--large">
+                            Start Free Trial
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#product" class="btn btn--secondary btn--large">
+                            Watch Demo
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 6L14 10L8 14V6Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <div class="stat__number">10K+</div>
+                            <div class="stat__label">Active Users</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number">4.9/5</div>
+                            <div class="stat__label">User Rating</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number">50+</div>
+                            <div class="stat__label">Countries</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <svg class="hero__illustration" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Gradient Definitions -->
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Background Elements -->
+                            <circle cx="250" cy="250" r="200" fill="url(#grad1)" opacity="0.1"/>
+                            <circle cx="250" cy="250" r="150" fill="url(#grad1)" opacity="0.15"/>
+                            
+                            <!-- Main Illustration -->
+                            <rect x="100" y="150" width="300" height="200" rx="15" fill="white" stroke="url(#grad1)" stroke-width="3"/>
+                            <rect x="120" y="170" width="80" height="60" rx="8" fill="url(#grad1)" opacity="0.3"/>
+                            <rect x="210" y="170" width="80" height="60" rx="8" fill="url(#grad2)" opacity="0.3"/>
+                            <rect x="300" y="170" width="80" height="60" rx="8" fill="url(#grad1)" opacity="0.3"/>
+                            
+                            <rect x="120" y="250" width="260" height="80" rx="8" fill="url(#grad1)" opacity="0.2"/>
+                            
+                            <!-- Floating Elements -->
+                            <circle class="float-1" cx="80" cy="100" r="15" fill="url(#grad1)"/>
+                            <circle class="float-2" cx="420" cy="120" r="20" fill="url(#grad2)"/>
+                            <circle class="float-3" cx="450" cy="350" r="12" fill="url(#grad1)"/>
+                            <rect class="float-4" x="50" y="350" width="25" height="25" rx="5" fill="url(#grad2)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Built for Everyone</h2>
+                <p class="section__description">
+                    Whether you're a founder or a learner, we have everything you need to succeed
+                </p>
+            </div>
+            
+            <div class="features__grid">
+                <!-- For Founders -->
+                <div class="feature-card feature-card--highlight">
+                    <div class="feature-card__header">
+                        <div class="feature-card__icon feature-card__icon--primary">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 22L16 28L28 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 16L16 22L28 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">For Founders</h3>
+                    </div>
+                    <p class="feature-card__description">
+                        Build and scale your startup with powerful tools designed for growth
+                    </p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Business planning tools</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Investor networking</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Growth analytics</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Team collaboration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- For Learners -->
+                <div class="feature-card feature-card--highlight">
+                    <div class="feature-card__header">
+                        <div class="feature-card__icon feature-card__icon--secondary">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 28H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 4V28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 12L16 4L24 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 20C22 20 20 22 16 22C12 22 10 20 10 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">For Learners</h3>
+                    </div>
+                    <p class="feature-card__description">
+                        Access world-class resources and mentorship to accelerate your learning
+                    </p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Expert-led courses</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>1-on-1 mentorship</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Project-based learning</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Career guidance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Features Grid -->
+            <div class="features__additional">
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">Lightning Fast</h4>
+                    <p class="feature-item__text">Optimized for speed and performance</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">24/7 Support</h4>
+                    <p class="feature-item__text">Always here when you need us</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">Premium Quality</h4>
+                    <p class="feature-item__text">Top-tier content and features</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">Secure & Safe</h4>
+                    <p class="feature-item__text">Enterprise-grade security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="product" id="product">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__badge">Product</span>
+                <h2 class="section__title">Everything You Need in One Place</h2>
+                <p class="section__description">
+                    A comprehensive platform designed to help you succeed
+                </p>
+            </div>
+            
+            <div class="product__showcase">
+                <div class="product__grid">
+                    <div class="product__card product__card--large">
+                        <div class="product__card-content">
+                            <svg class="product__mockup" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="12" fill="#1F2937"/>
+                                <rect x="20" y="20" width="360" height="40" rx="8" fill="#374151"/>
+                                <circle cx="40" cy="40" r="8" fill="#EF4444"/>
+                                <circle cx="65" cy="40" r="8" fill="#F59E0B"/>
+                                <circle cx="90" cy="40" r="8" fill="#10B981"/>
+                                
+                                <rect x="20" y="80" width="170" height="100" rx="8" fill="#6366F1" opacity="0.2"/>
+                                <rect x="210" y="80" width="170" height="100" rx="8" fill="#8B5CF6" opacity="0.2"/>
+                                <rect x="20" y="200" width="360" height="60" rx="8" fill="#EC4899" opacity="0.2"/>
+                            </svg>
+                            <div class="product__card-info">
+                                <h3>Dashboard Analytics</h3>
+                                <p>Real-time insights and metrics</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product__card">
+                        <div class="product__card-content">
+                            <svg class="product__mockup" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" rx="12" fill="#1F2937"/>
+                                <circle cx="100" cy="80" r="30" fill="#6366F1" opacity="0.3"/>
+                                <rect x="40" y="130" width="120" height="12" rx="6" fill="#6366F1" opacity="0.3"/>
+                                <rect x="60" y="155" width="80" height="8" rx="4" fill="#8B5CF6" opacity="0.3"/>
+                            </svg>
+                            <div class="product__card-info">
+                                <h3>User Profiles</h3>
+                                <p>Customizable profiles</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product__card">
+                        <div class="product__card-content">
+                            <svg class="product__mockup" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" rx="12" fill="#1F2937"/>
+                                <rect x="20" y="30" width="160" height="40" rx="8" fill="#EC4899" opacity="0.3"/>
+                                <rect x="20" y="85" width="160" height="40" rx="8" fill="#F59E0B" opacity="0.3"/>
+                                <rect x="20" y="140" width="160" height="40" rx="8" fill="#10B981" opacity="0.3"/>
+                            </svg>
+                            <div class="product__card-info">
+                                <h3>Task Management</h3>
+                                <p>Organize and prioritize</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product__card">
+                        <div class="product__card-content">
+                            <svg class="product__mockup" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" rx="12" fill="#1F2937"/>
+                                <path d="M40 140 L80 100 L120 120 L160 60" stroke="#6366F1" stroke-width="4" fill="none"/>
+                                <circle cx="40" cy="140" r="6" fill="#6366F1"/>
+                                <circle cx="80" cy="100" r="6" fill="#6366F1"/>
+                                <circle cx="120" cy="120" r="6" fill="#6366F1"/>
+                                <circle cx="160" cy="60" r="6" fill="#6366F1"/>
+                            </svg>
+                            <div class="product__card-info">
+                                <h3>Growth Tracking</h3>
+                                <p>Monitor your progress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__badge">Testimonials</span>
+                <h2 class="section__title">Loved by Thousands</h2>
+                <p class="section__description">
+                    See what our users have to say about their experience
+                </p>
+            </div>
+            
+            <div class="testimonials__grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "This platform has completely transformed how I run my business. The tools are intuitive and powerful. Highly recommended!"
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="24" fill="#6366F1"/>
+                                <text x="24" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="600">SK</text>
+                            </svg>
+                        </div>
+                        <div class="testimonial-card__info">
+                            <div class="testimonial-card__name">Sarah Kim</div>
+                            <div class="testimonial-card__role">CEO, TechStart</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "As a learner, I've gained so much from the courses and mentorship. The community is amazing and supportive!"
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="24" fill="#8B5CF6"/>
+                                <text x="24" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="600">MJ</text>
+                            </svg>
+                        </div>
+                        <div class="testimonial-card__info">
+                            <div class="testimonial-card__name">Michael Johnson</div>
+                            <div class="testimonial-card__role">Software Developer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2L12.09 7.26L18 8.27L14 12.14L15.18 18.02L10 15.27L4.82 18.02L6 12.14L2 8.27L7.91 7.26L10 2Z" fill="#F59E0B"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Best investment for my startup. The networking opportunities alone are worth it. Great value for money!"
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="24" fill="#EC4899"/>
+                                <text x="24" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="600">EC</text>
+                            </svg>
+                        </div>
+                        <div class="testimonial-card__info">
+                            <div class="testimonial-card__name">Emily Chen</div>
+                            <div class="testimonial-card__role">Founder, DesignCo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-item__number">10,000+</div>
+                    <div class="stat-item__label">Active Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__number">500+</div>
+                    <div class="stat-item__label">Companies Built</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__number">$50M+</div>
+                    <div class="stat-item__label">Funding Raised</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__number">4.9/5</div>
+                    <div class="stat-item__label">User Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__badge">Pricing</span>
+                <h2 class="section__title">Choose Your Plan</h2>
+                <p class="section__description">
+                    Flexible pricing for teams of all sizes
+                </p>
+            </div>
+            
+            <div class="pricing__grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Starter</h3>
+                        <p class="pricing-card__description">Perfect for trying out</p>
+                    </div>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__currency">$</span>
+                        <span class="pricing-card__amount">0</span>
+                        <span class="pricing-card__period">/month</span>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>5 Projects</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Basic support</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Community access</span>
+                        </li>
+                        <li class="pricing-card__feature pricing-card__feature--disabled">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li class="pricing-card__feature pricing-card__feature--disabled">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--outline btn--full">Get Started</a>
+                </div>
+
+                <!-- Professional Plan (Popular) -->
+                <div class="pricing-card pricing-card--popular">
+                    <div class="pricing-card__badge">Most Popular</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Professional</h3>
+                        <p class="pricing-card__description">For growing teams</p>
+                    </div>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__currency">$</span>
+                        <span class="pricing-card__amount">29</span>
+                        <span class="pricing-card__period">/month</span>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Unlimited projects</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Team collaboration</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>API access</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--primary btn--full">Start Free Trial</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Enterprise</h3>
+                        <p class="pricing-card__description">For large organizations</p>
+                    </div>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__currency">$</span>
+                        <span class="pricing-card__amount">99</span>
+                        <span class="pricing-card__period">/month</span>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Everything in Pro</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Dedicated support</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Custom integrations</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>SLA guarantee</span>
+                        </li>
+                        <li class="pricing-card__feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 6.25L7.5 15L3.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>On-premise deployment</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--outline btn--full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Ready to Get Started?</h2>
+                <p class="cta__description">
+                    Join thousands of founders and learners building the future
+                </p>
+                <div class="cta__buttons">
+                    <a href="#pricing" class="btn btn--primary btn--large">Start Free Trial</a>
+                    <a href="#" class="btn btn--ghost btn--large">Schedule a Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column footer__column--brand">
+                    <div class="footer__logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#6366F1"/>
+                            <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="footer__logo-text">LaunchPad</span>
+                    </div>
+                    <p class="footer__description">
+                        Building the future, one step at a time. Join our community of founders and learners.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" fill="currentColor"/>
+                                <circle cx="4" cy="4" r="2" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__heading">Product</h4>
+                    <ul class="footer__list">
+                        <li><a href="#features" class="footer__link">Features</a></li>
+                        <li><a href="#pricing" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Integrations</a></li>
+                        <li><a href="#" class="footer__link">API</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__heading">Company</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">About</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Careers</a></li>
+                        <li><a href="#" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__heading">Resources</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Documentation</a></li>
+                        <li><a href="#" class="footer__link">Help Center</a></li>
+                        <li><a href="#" class="footer__link">Community</a></li>
+                        <li><a href="#" class="footer__link">Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__heading">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Privacy</a></li>
+                        <li><a href="#" class="footer__link">Terms</a></li>
+                        <li><a href="#" class="footer__link">Security</a></li>
+                        <li><a href="#" class="footer__link">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 LaunchPad. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
